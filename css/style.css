@@ -40,16 +40,90 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#container2{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+#imagens{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#text{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+#text h1{
+    font-family: 'Brush Script MT', cursive;
+    margin-top: 60px;
+    font-size: 35px;
+    color: #FFEFC2;
+}
+#text img{
+    height: 30%;
+}
 
 @media only screen and (max-width: 1000px) {
-    body {
-      background-color: lightblue;
-    }
     .banner {
         height: 200px;
     }
     .container{
         height: 200px;
     }
-  }
+    #container2{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+    #imagens{
+        align-items: center;
+        width: 100%;
+        height: 60%;
+    }
+    #imagens img{
+        height: 100%;
+        width: 70%;
+    }
+    #text{
+        width: 100%;
+        height: 30%;
+       
+    }
+    #text h1{
+        margin-top: -20px;
+        font-size: 33px;
+    }
+    #text img{
+        margin-top: -10px;
+        width: 50%;
+        height: 40%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .container{
+        height: 150px;
+    }
+    #container2{
+        height: 250px;
+    }
+    #imagens img{
+        height: 90%;
+    }
+    #text{
+        height: 20%;
+    }
+    #text h1{
+        font-size: 18px;
+    }
+    #text h1{
+        margin-top: -20px;
+    }
+    #text img{
+       width: 35%;
+    }
+}
